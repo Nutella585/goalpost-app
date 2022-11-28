@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class GoalsVC: UIViewController {
 
@@ -13,7 +14,9 @@ class GoalsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.isHidden = false
     }
 
 
@@ -22,4 +25,22 @@ class GoalsVC: UIViewController {
     }
     
 }
-
+//
+// MARK: Table View Creation
+//
+extension GoalsVC: UITableViewDelegate, UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "taskCell") as? TaskCell
+        else {
+            return UITableViewCell()
+        }
+        cell.updateCell(desc: "Eat salad once.", type: .longTerm, progress: 2)
+        return cell
+    }
+}

@@ -13,9 +13,9 @@ class TaskCell: UITableViewCell {
     @IBOutlet weak var typeLbl          : UILabel!
     @IBOutlet weak var progressLbl      : UILabel!
     
-    func updateCell (desc: String, type: String, progress: Int) {
+    func updateCell (desc: String, type: TaskType, progress: Int) {
         self.descriptionLbl.text = desc
-        self.typeLbl.text        = type
+        self.typeLbl.text        = type.rawValue
         self.progressLbl.text    = String (describing: progress)
     }
 }
