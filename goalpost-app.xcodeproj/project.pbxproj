@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E934673E293D3FE2008734C7 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E934673D293D3FE2008734C7 /* UIViewControllerExt.swift */; };
 		E9CA19AB293442DC009A397F /* CreateGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CA19AA293442DC009A397F /* CreateGoalVC.swift */; };
 		E9E021362933FA8C00DC7470 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E021352933FA8C00DC7470 /* AppDelegate.swift */; };
 		E9E021382933FA8C00DC7470 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E021372933FA8C00DC7470 /* SceneDelegate.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E934673D293D3FE2008734C7 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		E9CA19AA293442DC009A397F /* CreateGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalVC.swift; sourceTree = "<group>"; };
 		E9E021322933FA8C00DC7470 /* goalpost-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "goalpost-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E021352933FA8C00DC7470 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 		E9E0214E2933FBA300DC7470 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				E934673D293D3FE2008734C7 /* UIViewControllerExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 			files = (
 				E9E0213A2933FA8C00DC7470 /* GoalsVC.swift in Sources */,
 				E9E021362933FA8C00DC7470 /* AppDelegate.swift in Sources */,
+				E934673E293D3FE2008734C7 /* UIViewControllerExt.swift in Sources */,
 				E9E021402933FA8C00DC7470 /* goalpost_app.xcdatamodeld in Sources */,
 				E9E021382933FA8C00DC7470 /* SceneDelegate.swift in Sources */,
 				E9CA19AB293442DC009A397F /* CreateGoalVC.swift in Sources */,
